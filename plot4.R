@@ -10,7 +10,7 @@ df.project <- subset(df.project, df.project$Date =="1/2/2007" | df.project$Date 
 png<-png(file = "plot4.png",480,480)
 
 #3 Give the par value for the plot
-par(mfcol = c(2,2))
+par(mfcol = c(2,2),mar = c(4,4,2,2))
 
 #5 Let us create the Global Active power line plot 
 dateTime  <- as.POSIXlt(paste(as.Date(df.project$Date,format="%d/%m/%Y"), df.project$Time, sep=" "))
